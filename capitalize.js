@@ -24,11 +24,3 @@ console.log(capitalize('UPPERCASE', 'lowercase', 'MiXeD')); // Uppercase Lowerca
 console.log(capitalize('  multiple   spaces  ')); // Multiple Spaces
 console.log(capitalize('')); // ''
 console.log(capitalize('a')); // A
-
-
-function capitalize(...text) {
-   
-    return text.map(word => 
-        word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-    ).join(' ');
-};
